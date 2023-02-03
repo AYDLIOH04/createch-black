@@ -31,6 +31,10 @@
     width: 30%;
 
     padding-right: 10px;
+
+    opacity: 0;
+    transform: translate(-100%, 0px);
+    transition: all 0.8s;
 }
 
 .info__title {
@@ -42,6 +46,10 @@
 .contacts__map {
     width: 70%;
     transition: all 0.2s;
+
+    opacity: 0;
+    transform: translate(100%, 0px);
+    transition: all 0.8s;
 }
 
 .contacts__map:hover {
@@ -96,3 +104,6 @@ table {
 .copyright a:hover {
     text-decoration: underline;
 }
+
+
+

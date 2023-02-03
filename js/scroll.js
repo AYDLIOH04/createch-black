@@ -1,0 +1,38 @@
+
+const animItems = document.querySelectorAll("._anim")
+
+if (animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll)
+
+    function animOnScroll(params) {
+        for (let index = 0; index < animItems.length; index++){
+            const animItem = animItems[index],
+                  animItemHeight = animItem.offsetHeight,
+                  animItemOffset = offset(animItem).top,
+                  animStart = 4
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart
+
+            if (animItemHeight > window.innerHeight){
+                animItemPoint = window.innerHeight - animItemHeight / animStart
+            }
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                animItem.classList.add('_active')
+            } 
+        }
+    }
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+              scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+              scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+    setTimeout(() => {
+        animOnScroll()
+        document.querySelector('.intro__footer').classList.add('_active')
+        document.querySelector('.intro__title').classList.add('_active')
+        document.querySelector('.intro__logo').classList.add('_active')
+    }, 300)
+    
+}

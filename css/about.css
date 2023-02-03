@@ -21,6 +21,11 @@
     margin-bottom: 20px;
 
     color: var(--color-text-header);
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s;
+    
 }
 
 .about__text {
@@ -31,6 +36,17 @@
     color: var(--color-text-header);
 }
 
+.about__inner {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 
 
 

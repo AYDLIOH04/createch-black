@@ -82,3 +82,52 @@
 .eigth::after {
     content: "8";
 }
+
+.first {
+    opacity: 0;
+    transform: translate(-100%, 0px);
+    transition: all 0.8s ease 0.2s;
+}
+
+.second {
+    opacity: 0;
+    transform: translate(-200%, 0px);
+    transition: all 0.8s ease 0.4s;
+}
+
+.third {
+    opacity: 0;
+    transform: translate(-300%, 0px);
+    transition: all 0.8s ease 0.6s;
+}
+
+.fouth {
+    opacity: 0;
+    transform: translate(-400%, 0px);
+    transition: all 0.8s ease 0.8s;
+}
+
+.fiveth {
+    opacity: 0;
+    transform: translate(400%, 0px);
+    transition: all 0.8s ease 1s;
+}
+
+.sixth {
+    opacity: 0;
+    transform: translate(300%, 0px);
+    transition: all 0.8s ease 1.2s;
+}
+
+.seventh {
+    opacity: 0;
+    transform: translate(200%, 0px);
+    transition: all 0.8s ease 1.4s;
+}
+
+.eigth {
+    opacity: 0;
+    transform: translate(100%, 0px);
+    transition: all 0.8s ease 1.6s;
+}
+

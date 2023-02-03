@@ -15,6 +15,7 @@
     <script defer src="js/email.js"></script>
     <script defer src="js/popup.js"></script>
     <script defer src="js/header.js"></script>
+    <script defer src="js/scroll.js"></script>
 </head>
 <body>
     <div class="page">
@@ -58,7 +59,7 @@
         <section class="news">
             <div class="container">
                 <div class="news__inner">
-                    <div class="swiper mySwiper">
+                    <div class="swiper mySwiper _anim">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/company/Cisco.png" alt="">
@@ -142,7 +143,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <a href="#popup" class="button popup-link">Оформить запрос</a>
+                    <a href="#popup" class="button news__button popup-link _anim">Оформить запрос</a>
                 </div>
             </div>
         </section>
@@ -150,8 +151,8 @@
         <section class="about" id="about">
             <div class="container__title">О нас</div>
             <div class="container">
-                <div class="about__slogn">Компания ООО «КРЕАТЕХ» полностью разделяет Ваши взгляды</div>
-                <div class="about__inner">
+                <div class="about__slogn _anim">Компания ООО «КРЕАТЕХ» полностью разделяет Ваши взгляды</div>
+                <div class="about__inner _anim">
                     <div class="about__text">Вы двигаетесь вперед. Вы понимаете, что время - важный ресурс, а надежность - ключевой аспект при выборе партнера. Вы знаете, что хороший поставщик - это основной фактор эффективности. Вам важен индивидуальный подход и поддержка на всех стадиях реализации Ваших проектов.</div>
                 </div>
             </div>
@@ -159,13 +160,13 @@
 
         <div class="about-list">
             <div class="container">
-                <div class="list__title">НАШИ КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ,
+                <div class="list__title _anim">НАШИ КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ,
                     ДЛЯ РЕШЕНИЯ ВАШИХ ЗАДАЧ:</div>
                 <div class="about__list">
-                    <div class="list__item">Поставка сетевого и коммутационного оборудования и промышленных компьютеров крупнейших мировых производителей в условиях санкций, бойкотов и ограничений</div>
-                    <div class="list__item">Подготовка решений для технического перевооружения промышленных предприятий и мероприятия для их реализации</div>
-                    <div class="list__item">Комплексное оснащение промышленным коммуникационным и сетевым оборудованием</div>
-                    <div class="list__item">Формирование конфигураций, сборка и тестирование промышленных компьютеров под любые задачи.</div>
+                    <div class="list__item  _anim left">Поставка сетевого и коммутационного оборудования и промышленных компьютеров крупнейших мировых производителей в условиях санкций, бойкотов и ограничений</div>
+                    <div class="list__item  _anim right">Подготовка решений для технического перевооружения промышленных предприятий и мероприятия для их реализации</div>
+                    <div class="list__item  _anim left left_last">Комплексное оснащение промышленным коммуникационным и сетевым оборудованием</div>
+                    <div class="list__item  _anim right right_last">Формирование конфигураций, сборка и тестирование промышленных компьютеров под любые задачи.</div>
                 </div>
             </div>
         </div>
@@ -173,36 +174,36 @@
         <section class="venders" id="venders">
             <div class="container__title">Вендоры</div>
             <div class="container">
-                <div class="venders__slogn">ООО «Креатех» осуществляет поставку оборудования популярных вендоров</div>
+                <div class="venders__slogn _anim">ООО «Креатех» осуществляет поставку оборудования популярных вендоров</div>
                 <div class="venders__list">
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Cisco.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/росатом.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Screenshot_1.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link without__padding"><img src="images/company/делл.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link without__padding "><img src="images/company/хпхпхпхпхпхъпхпхп.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Active Key.jfif" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/phoenix contact.jfif" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/advantech.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/advantix.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Screenshot_2.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/CHNT.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/D-link.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Eltex.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Enersys.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/hikvision.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/ICP das.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Juniper.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Mikrotix.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Moxa.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/ритал.png" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Rollon.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Schneider Electric.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/photo_2023-02-03_00-18-00.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/C2EA5DB4-807A-4F29-B3D5-85B21C3D467A.jfif" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/Wago.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/weidmuller.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/weintek.jpg" alt=""></a></div>
-                    <div class="vender"><a href="#popup" class="popup-link"><img src="images/company/екб.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/Cisco.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/росатом.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/Screenshot_1.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim without__padding"><img src="images/company/делл.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim without__padding "><img src="images/company/хпхпхпхпхпхъпхпхп.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Active Key.jfif" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/phoenix contact.jfif" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/advantech.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/advantix.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/Screenshot_2.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/CHNT.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/D-link.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Eltex.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Enersys.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/hikvision.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/ICP das.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/Juniper.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Mikrotix.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Moxa.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/ритал.png" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Rollon.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/Schneider Electric.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/photo_2023-02-03_00-18-00.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link r _anim"><img src="images/company/C2EA5DB4-807A-4F29-B3D5-85B21C3D467A.jfif" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/Wago.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/weidmuller.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/weintek.jpg" alt=""></a></div>
+                    <div class="vender"><a href="#popup" class="popup-link l _anim"><img src="images/company/екб.jpg" alt=""></a></div>
                     
                 </div>
             </div>
@@ -213,14 +214,14 @@
             <div class="container">
                 <div class="work__wrapper">
                     <div class="scheme">
-                        <div class="scheme__item">Получаем и обрабатываем Ваш запрос</div>
-                        <div class="scheme__item second">Подбираем для Вас необходимое оборудование</div>
-                        <div class="scheme__item third">Согласовываем с Вами основные условия</div>
-                        <div class="scheme__item fouth">Прорабатываем возможные варианты поставки импортного оборудования через наших партнёров</div>
-                        <div class="scheme__item fiveth">Направляем Вам готовое ТКП</div>
-                        <div class="scheme__item sixth">Заключаем договор на поставку продукции</div>
-                        <div class="scheme__item seventh">Осуществляем поставку и доставку оборудования в соответствии с условиями договора</div>
-                        <div class="scheme__item eigth">Закрываем сделку</div>
+                        <div class="scheme__item _anim first">Получаем и обрабатываем Ваш запрос</div>
+                        <div class="scheme__item _anim second">Подбираем для Вас необходимое оборудование</div>
+                        <div class="scheme__item _anim third">Согласовываем с Вами основные условия</div>
+                        <div class="scheme__item _anim fouth">Прорабатываем возможные варианты поставки импортного оборудования через наших партнёров</div>
+                        <div class="scheme__item _anim fiveth">Направляем Вам готовое ТКП</div>
+                        <div class="scheme__item _anim sixth">Заключаем договор на поставку продукции</div>
+                        <div class="scheme__item _anim seventh">Осуществляем поставку и доставку оборудования в соответствии с условиями договора</div>
+                        <div class="scheme__item _anim eigth">Закрываем сделку</div>
                     </div>
                 </div>
             </div>
@@ -233,7 +234,7 @@
                     <a href="#"><i class="fa-solid fa-arrow-up"></i>  Наверх</a>
                 </div>
                 <div class="contacts__wrapper">
-                    <table class="contacts__info">
+                    <table class="contacts__info _anim">
                         <tbody>
                             <tr>
                                 <td class="icon"><i class="fa-solid fa-location-dot"></i></td>
@@ -265,7 +266,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="contacts__map"><a target="_blank" href="https://yandex.ru/maps/54/yekaterinburg/house/bulvar_akademika_n_a_semikhatova_18/YkkYcwNkTkUAQFtsfXt5dH9iYQ==/?azimuth=0.5452271555372754&ll=60.545393%2C56.784956&tilt=0.8726646259971648&z=17.2"><img src="images/map.png" alt=""></a></div>
+                    <div class="contacts__map _anim"><a target="_blank" href="https://yandex.ru/maps/54/yekaterinburg/house/bulvar_akademika_n_a_semikhatova_18/YkkYcwNkTkUAQFtsfXt5dH9iYQ==/?azimuth=0.5452271555372754&ll=60.545393%2C56.784956&tilt=0.8726646259971648&z=17.2"><img src="images/map.png" alt=""></a></div>
                 </div>
             </div>
         </section>

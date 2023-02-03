@@ -13,6 +13,7 @@
 }
 
 .wrapper__inner {
+    overflow: hidden;
     max-width: 1200px;
     height: auto;
     display: flex;
@@ -24,7 +25,12 @@
 .intro__logo {
     max-width: 500px;
     padding-right: 50px;
+
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 0.8s;
 }
+
 
 .intro__logo img{
     max-width: 100%;
@@ -37,6 +43,10 @@
     text-transform: uppercase;
 
     max-width: 600px;
+
+    transform: translate(100%, 0px);
+    opacity: 0;
+    transition: all 0.8s;
 }
 
 .intro__footer {
@@ -47,7 +57,20 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s  ease 0.5s;
+
+    z-index: 3;
 }
+
+._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
 
 .footer__text {
     color: var(--color-text-header);
