@@ -1,0 +1,59 @@
+
+/* ? Intro */
+.intro {
+    background: url("/images/black/1660763781_15-kartinkin-net-p-neiroset-oboi-krasivo-22.jpeg") no-repeat fixed;
+    background-size:cover;
+}
+
+.intro__wrapper {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__footer {
+    height: 15vh;
+    background-color: var(--bg-color-header);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__text {
+    color: var(--color-text-header);
+
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 900px;
+}
+
+
+.wrapper__inner {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.intro__logo {
+    max-width: 500px;
+    padding-right: 50px;
+}
+
+.intro__logo img{
+    max-width: 100%;
+}
+
+.intro__title {
+    color: var(--color-text-header);
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    max-width: 600px;
+}

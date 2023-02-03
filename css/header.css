@@ -1,0 +1,96 @@
+/* ? Header */
+.header {
+    background-color: var(--bg-color-header);
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    transition: all .2s;
+}
+
+.fixed {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__logo {
+    display: none;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-header);
+}
+
+
+
+
+
+/* ? Nav */
+.nav {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav__item {
+    color: var(--color-text-header);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+.nav__item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--color-text-header);
+
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.nav__item.active::after{
+    opacity: 1;
+}
+
+.nav__item:hover::after {
+    opacity: 1;
+}
+
+
+.contacts__item {
+    color: var(--color-text-header);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.phone__nubmer{
+    padding-bottom: 5px;
+}
+
+
+/* TODO toggle */

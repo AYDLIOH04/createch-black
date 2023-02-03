@@ -1,0 +1,37 @@
+/* ? About */
+
+.about {
+    background: url("/images/black/ы.jpg") no-repeat fixed;
+    background-size:cover;
+    height: 800px;
+}
+.about__inner {
+    text-align: center;
+
+}
+
+.about__slogn{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    color: var(--color-text-header);
+}
+
+.about__text {
+    margin: 0 auto;
+
+    font-size: 20px;
+    max-width: 900px;
+    color: var(--color-text-header);
+}
+
+
+
+
+

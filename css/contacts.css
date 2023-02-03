@@ -1,0 +1,103 @@
+/* ? Contacts */
+
+
+
+#contacts__title {
+    color: var(--bg-color-header);
+    background-color: #fff;
+}
+.contacts__btn__up {
+    text-align: end;
+}
+
+.contacts__btn__up a {
+    text-decoration: none;
+    color: var(--color-text-page);
+}
+
+.contacts__btn__up a:hover {
+    text-decoration: underline;
+}
+
+.contacts__wrapper {
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__info {
+    width: 30%;
+
+    padding-right: 10px;
+}
+
+.info__title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.contacts__map {
+    width: 70%;
+    transition: all 0.2s;
+}
+
+.contacts__map:hover {
+    transform: scale(1.1);
+
+}
+
+.contacts__map img {
+    max-width: 100%;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.icon {
+    font-size: 30px;
+    padding-right: 20px;
+    color: var(--bg-color-second);
+}
+
+table {
+    max-height: 350px;
+}
+
+
+
+
+
+/* TODO Что-то надо делать */
+
+.hr__last {
+    margin-bottom: 0;
+}
+
+.space {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.copyright {
+
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.copyright a {
+    color: #f38181;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+
+.contacts {
+    margin-bottom: 425px;
+}

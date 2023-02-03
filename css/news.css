@@ -1,0 +1,61 @@
+/* ? News */
+
+.news {
+    margin-top: 100px;
+}
+.news__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+}
+
+
+/* ? Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* ? Button */
+.button {
+    width: 18em;
+    height: 2em;
+    margin: 75px 0;
+    padding: 12px 0;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-header);
+    font-size: 25px;
+
+    background-color: var(--bg-color-first);
+
+    border-radius: 10px;
+
+    transition: all .2s linear;
+}
+
+.button:hover {
+    transform: translate3d(-10px, -10px, 0);
+    box-shadow: 10px 10px var(--bg-color-second);
+}

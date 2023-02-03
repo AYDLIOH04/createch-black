@@ -1,0 +1,64 @@
+/* ? Venders */
+.venders {
+    margin-bottom: 70px;
+}
+
+.venders__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.vender {
+    width: 14%;
+    border: 1px solid #e1e1e1;
+
+    transition: border-color 0.2s;
+    transition: box-shadow 0.2s;
+    transition: transform 0.2s;
+}
+
+.vender a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+}
+
+.vender:hover {
+    z-index: 1;
+    background-color: #fff;
+
+
+    border-color: var(--bg-color-second);
+    box-shadow: 0 0 10px var(--bg-color-second);
+    transform: scale(1.1);
+}
+
+
+.vender img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.without__padding {
+    padding: 0;
+}
+
+.venders__slogn {
+    padding: 20px 0;
+    text-align: center;
+
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    color: var(--bg-color-header);
+
+}
