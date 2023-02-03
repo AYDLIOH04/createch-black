@@ -1,7 +1,7 @@
 /* ? About */
 
 .about {
-    background: url("/images/black/ы.jpg") no-repeat fixed;
+    background: url("../images/black/ы.jpg") no-repeat fixed;
     background-size:cover;
     height: 800px;
 }
