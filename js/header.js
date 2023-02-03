@@ -3,6 +3,9 @@ $(function() {
         $("#header").addClass('fixed')
     }
 
+    const windowInnerHeight = window.innerHeight
+    const spaceHeight = document.getElementById("space").offsetHeight
+    const contactsHeight = document.getElementById("contacts").offsetHeight
 
     const header = $("#header")
     
@@ -16,7 +19,7 @@ $(function() {
               blockOffSet = $(blockId).offset().top - header.height() + 1
 
         $("#nav a").removeClass("active")
-        $this.addClass("active")
+        // $this.addClass("active")
 
         $("html, body").animate({
             scrollTop: blockOffSet
@@ -38,7 +41,8 @@ $(function() {
             ifScroll("#scroll__about", "#about", height)
             ifScroll("#scroll__vend", "#venders", height)
             ifScroll("#scroll__work", "#work", height)
-            ifScroll("#scroll__cont", "#contacts", height)
+            scrollToContacts("#scroll__cont", "#contacts", height)
+
         }
     });
 
@@ -50,6 +54,21 @@ $(function() {
             $(navItem).removeClass('active');
         }
     }
+
+    function scrollToContacts(navItem, content, height) {
+        if ((spaceHeight + contactsHeight) > windowInnerHeight) {
+            ifScroll(navItem, content, height)
+        } else {
+            if(height >= ($('body').height() - windowInnerHeight - header.height())){
+                $("#nav a").removeClass('active')
+                $(navItem).addClass('active');
+            } else {
+                $(navItem).removeClass('active');
+            }
+        }
+
+    }
+    
 
 
 

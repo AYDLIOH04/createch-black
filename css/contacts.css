@@ -82,22 +82,17 @@ table {
 }
 
 .copyright {
-
     font-size: 15px;
     color: #333;
     text-align: center;
 }
 
 .copyright a {
-    color: #f38181;
+    font-weight: 600;
+    color: var(--bg-color-second);
     text-decoration: none;
 }
 
 .copyright a:hover {
     text-decoration: underline;
-}
-
-
-.contacts {
-    margin-bottom: 425px;
 }

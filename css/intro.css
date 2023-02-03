@@ -12,25 +12,6 @@
     align-items: center;
 }
 
-.intro__footer {
-    height: 15vh;
-    background-color: var(--bg-color-header);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer__text {
-    color: var(--color-text-header);
-
-    font-size: 22px;
-    font-weight: 600;
-    max-width: 900px;
-}
-
-
 .wrapper__inner {
     max-width: 1200px;
     height: auto;
@@ -56,4 +37,22 @@
     text-transform: uppercase;
 
     max-width: 600px;
+}
+
+.intro__footer {
+    height: 15vh;
+    background-color: var(--bg-color-header);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__text {
+    color: var(--color-text-header);
+
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 900px;
 }
