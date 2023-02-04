@@ -327,6 +327,7 @@ hr {
     }
     .scheme__item {
         width: 300px;
+        transition: all 0.8s ease 0.2s;
     }
     .contacts__wrapper {
         padding: 0 25px;
