@@ -3,6 +3,8 @@
 .intro {
     background: url("../images/black/bg-intro.jpeg") no-repeat fixed;
     background-size:cover;
+    background-position: center center;
+
 }
 
 .intro__wrapper {
