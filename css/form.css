@@ -4,7 +4,7 @@
 }
 
 .form {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
 
 
 .form__title {
+    text-align: center;
     font-size: 30px;
     margin-bottom: 1em;
 }
@@ -75,6 +76,7 @@ textarea.form__input {
 
 
 .form__button {
+
     width: 100%;
     min-height: 60px;
     margin: 0;

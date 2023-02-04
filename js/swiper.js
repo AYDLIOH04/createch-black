@@ -18,15 +18,15 @@ var swiper = new Swiper(".mySwiper", {
 
 
     breakpoints: {
-      500: {
+      0: {
         slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      1000: {
+      600: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
-      1360: {
+      1000: {
         slidesPerView: 3,
         slidesPerGroup: 3,
       }
