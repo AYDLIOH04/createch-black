@@ -68,42 +68,4 @@ $(function() {
         }
 
     }
-    
-
-
-
-
-
-    
-    // // Menu nav toogle
-    // $("#nav_toggle").on("click", function(event){
-    //     event.preventDefault()
-
-    //     $(this).toggleClass("active")
-    //     $("#nav").toggleClass("active")
-    // })
-
-
-    // // Collapse
-    // $("[data-collapse]").on("click", function(event){
-    //     event.preventDefault()
-
-    //     const $this = $(this),
-    //           blockId = $this.data("collapse")
-
-    //     $this.toggleClass("active")
-    //     $(blockId).slideToggle() // Встроенные анимации
-        
-    // })
-
-
-    // // Slider
-    // $("[data-slider]").slick({
-    //     infinite: true,
-    //     fade: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-
-    // })
-
 })
