@@ -13,7 +13,6 @@
 }
 
 .wrapper__inner {
-    overflow: hidden;
     max-width: 1200px;
     height: auto;
     display: flex;

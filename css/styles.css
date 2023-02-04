@@ -50,6 +50,9 @@ body {
     padding: 0 15px;
 }
 
+.page {
+    overflow: hidden;
+}
 
 hr {
     content: "";
@@ -87,7 +90,6 @@ hr {
 
     padding: 15px 0;
 }
-
 
 
 /* * MEDIA */
