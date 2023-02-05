@@ -272,6 +272,14 @@ hr {
 
 
 @media (max-width: 768px){
+    .intro {
+        background: url("../images/black/bg-intro.jpeg") no-repeat center;
+        background-size:cover;
+    }
+    .about {
+        background: url("../images/black/bg-about.jpg") no-repeat center;
+        background-size:cover;
+    }
 
     .wrapper__inner {
         flex-direction: column;
