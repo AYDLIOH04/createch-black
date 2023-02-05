@@ -21,15 +21,15 @@ async function formSend(e) {
         
         $('.submit', form).val('Отправка...');
     
-        data.append( 'Название организации', 	                  $('[name="comp"]', form).val() );
-        data.append( 'Имя', 		                              $('[name="name"]', form).val() );
-        data.append( 'E-mail', 		                              $('[name="email"]', form).val() );
-        data.append( 'Телефон', 		                          $('[name="number"]', form).val() );
-        data.append( 'Необходимые технические характеристики',    $('[name="techharact"]', form).val() );
-        data.append( 'Наименование запрашиваемого оборудования',  $('[name="id"]', form).val() );
-        data.append( 'Артикул',                                   $('[name="articl"]', form).val() );
-        data.append( 'Количество',                                $('[name="count"]', form).val() );
-        data.append( 'Коментарии',                                $('[name="coments"]', form).val() );
+        data.append( 'Название организации', 	    $('[name="comp"]', form).val() );
+        data.append( 'Имя', 		                $('[name="name"]', form).val() );
+        data.append( 'E-mail', 		                $('[name="email"]', form).val() );
+        data.append( 'Телефон', 		            $('[name="number"]', form).val() );
+        data.append( 'Технические характеристики',  $('[name="techharact"]', form).val() );
+        data.append( 'Наименование оборудования',   $('[name="id"]', form).val() );
+        data.append( 'Артикул',                     $('[name="articl"]', form).val() );
+        data.append( 'Количество',                  $('[name="count"]', form).val() );
+        data.append( 'Коментарии',                  $('[name="coments"]', form).val() );
         
         $.ajax({
             url: 'ajax.php',
