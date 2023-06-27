@@ -24,7 +24,7 @@ async function formSend(e) {
             'Коментарии': $('[name="coments"]', forma).val(),
         };
       
-          try {
+        try {
             const response = await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
               chat_id: "-888721777",
               text: createMessage(data),
@@ -32,12 +32,16 @@ async function formSend(e) {
 
             if (response.data.ok) {
                 console.log("Запрос отправлен!", response.data)
+                popupContent.classList.remove('_sending')
+
+                setTimeout(() => {
+                    const mail = createObject()
+                    formAlert(mail)
+                    forma.reset()
+                }, 100)
             }
         } catch (error) {
             console.error(error);
-        }
-
-        setTimeout(() => {
             popupContent.classList.remove('_sending')
 
             setTimeout(() => {
@@ -45,10 +49,7 @@ async function formSend(e) {
                 formAlert(mail)
                 forma.reset()
             }, 100)
-        }, 500)
-
-    } else {
-        alert('Заполните обязательные поля!')
+        }
     }
 }
 
