@@ -21,7 +21,7 @@ async function formSend(e) {
             'Наименование оборудования': $('[name="id"]', forma).val(),
             'Артикул': $('[name="articl"]', forma).val(),
             'Количество': $('[name="count"]', forma).val(),
-            'Коментарии': $('[name="coments"]', forma).val(),
+            'Комментарии': $('[name="coments"]', forma).val(),
         };
       
         try {
@@ -33,49 +33,38 @@ async function formSend(e) {
             if (response.data.ok) {
                 console.log("Запрос отправлен!", response.data)
                 popupContent.classList.remove('_sending')
-
-                setTimeout(() => {
-                    const mail = createObject()
-                    formAlert(mail)
-                    forma.reset()
-                }, 100)
+                forma.reset()
             }
         } catch (error) {
-            console.error(error);
+            console.error("Ошибка отправки!", error);
             popupContent.classList.remove('_sending')
-
-            setTimeout(() => {
-                const mail = createObject()
-                formAlert(mail)
-                forma.reset()
-            }, 100)
+            forma.reset()
         }
     }
+    // else {
+    //     alert('Заполните обязательные поля!')
+    // }
 }
 
+function getCurrentDateTime() {
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const year = currentDate.getFullYear();
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+  
+    const formattedDateTime = `${day}.${month}.${year} ${hours}:${minutes}`;
+    return formattedDateTime;
+}  
+
 function createMessage(data) {
-    let message = 'ЗАПРОС ОТПРАВЛЕН\n\n';
+    let message = 'ПОЛУЧЕН ЗАПРОС\n\n';
     for (let key in data) {
       message += `${key}: ${data[key]}\n`;
     }
+    message += `\n${getCurrentDateTime()}`;
     return message;
-}
-
-function createObject() {
-    let data = document.querySelectorAll("._form")
-    const mail = {}
-    for (let i = 0; i < data.length; i+=2) {
-        mail[data[i].textContent] = data[i + 1].value
-    }
-    return mail
-}
-
-function formAlert(mail) {
-    let ans = 'ЗАПРОС ОТПРАВЛЕН\n\n' 
-    for (var key in mail) {
-        ans += `${key}:   ${mail[key]}\n`
-    }
-    alert(ans)
 }
 
 function formValidate(form) {
@@ -101,16 +90,16 @@ function formValidate(form) {
     return error
 }
 
-function formAddError(input){
+function formAddError(input) {
     input.parentElement.classList.add('_error')
     input.classList.add('_error')
 }
 
-function formRemoveError(input){
+function formRemoveError(input) {
     input.parentElement.classList.remove('_error')
     input.classList.remove('_error')
 }
 
-function emailTest(input){
+function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
 }
