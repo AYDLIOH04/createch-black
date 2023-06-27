@@ -1,4 +1,5 @@
 'use strict'
+const token = "6161204777:AAGQMlkmMAS8gECJAbXDNXBlIGOfJtZ2Uno";
 
 const forma = document.getElementById('form')
 forma.addEventListener('submit', formSend)
@@ -11,52 +12,31 @@ async function formSend(e) {
         const popupContent = document.querySelector('.popup__content')
         popupContent.classList.add('_sending')
 
+        let data = {
+            'Название организации': $('[name="comp"]', forma).val(),
+            'Имя': $('[name="name"]', forma).val(),
+            'E-mail': $('[name="email"]', forma).val(),
+            'Телефон': $('[name="number"]', forma).val(),
+            'Технические характеристики': $('[name="techharact"]', forma).val(),
+            'Наименование оборудования': $('[name="id"]', forma).val(),
+            'Артикул': $('[name="articl"]', forma).val(),
+            'Количество': $('[name="count"]', forma).val(),
+            'Коментарии': $('[name="coments"]', forma).val(),
+        };
+      
+          try {
+            const response = await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
+              chat_id: "-888721777",
+              text: createMessage(data),
+            });
 
-        event.preventDefault();
-    
-        let form = $('.form__body'),
-            submit = $('.submit', form),
-            data = new FormData()
-    
-        
-        $('.submit', form).val('Отправка...');
-    
-        data.append( 'Название организации', 	    $('[name="comp"]', form).val() );
-        data.append( 'Имя', 		                $('[name="name"]', form).val() );
-        data.append( 'E-mail', 		                $('[name="email"]', form).val() );
-        data.append( 'Телефон', 		            $('[name="number"]', form).val() );
-        data.append( 'Технические характеристики',  $('[name="techharact"]', form).val() );
-        data.append( 'Наименование оборудования',   $('[name="id"]', form).val() );
-        data.append( 'Артикул',                     $('[name="articl"]', form).val() );
-        data.append( 'Количество',                  $('[name="count"]', form).val() );
-        data.append( 'Коментарии',                  $('[name="coments"]', form).val() );
-        
-        $.ajax({
-            url: 'ajax.php',
-            type: 'POST',
-            data: data,
-            cache: false,
-            dataType: 'json',
-            processData: false,
-            contentType: false,
-            xhr: function() {
-                let myXhr = $.ajaxSettings.xhr();
-    
-                if ( myXhr.upload ) {
-                    myXhr.upload.addEventListener( 'progress', function(e) {
-                        if ( e.lengthComputable ) {
-                            let percentage = ( e.loaded / e.total ) * 100;
-                                percentage = percentage.toFixed(0);
-                            $('.submit', form)
-                                .html( percentage + '%' );
-                        }
-                    }, false );
-                }
-    
-                return myXhr;
+            if (response.data.ok) {
+                console.log("Запрос отправлен!", response.data)
             }
-        });
-        
+        } catch (error) {
+            console.error(error);
+        }
+
         setTimeout(() => {
             popupContent.classList.remove('_sending')
 
@@ -70,6 +50,14 @@ async function formSend(e) {
     } else {
         alert('Заполните обязательные поля!')
     }
+}
+
+function createMessage(data) {
+    let message = 'ЗАПРОС ОТПРАВЛЕН\n\n';
+    for (let key in data) {
+      message += `${key}: ${data[key]}\n`;
+    }
+    return message;
 }
 
 function createObject() {

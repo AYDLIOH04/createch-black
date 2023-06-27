@@ -19,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.9) url('https://i.gifer.com/XOsX.gif') center / 200px no-repeat;
+    background: rgba(51, 51, 51, 0.9) url('../images/gifs/loading-loading-forever.gif') center / 100px no-repeat;
 
     opacity: 0;
     visibility: hidden;
